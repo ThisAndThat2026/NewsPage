@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>[DATE] · Bothell Morning Briefing</title>
+<meta name="description" content="[ONE-LINE SUMMARY]">
+<style>
+/* Bothell Morning Briefing · day page. Do not change this block; only fill placeholders in the body. */
+:root{
+  --bg:#f6f5f3; --surface:#ffffff; --fg:#1c1b1a; --muted:#6d6862; --rule:#e2ded8;
+  --brand:#c8102e; --brand-ink:#ffffff; --soft:#fbefe9;
+  --c-top:#c8102e; --c-local:#0f6e6a; --c-state:#1f5fa8; --c-us:#3b3f8f; --c-world:#5d6b2f;
+  --c-israel:#0b5cad; --c-tech:#7a3fa0; --c-talk:#b4541a; --c-next:#555f6b;
+  --f-head:"Arial Narrow","Helvetica Neue",Arial,sans-serif;
+  --f-body:Georgia,"Times New Roman",serif;
+  --f-meta:ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#141312; --surface:#1d1c1a; --fg:#ece8e2; --muted:#a39d95; --rule:#34312d;
+    --brand:#d9283f; --brand-ink:#ffffff; --soft:#2a1f1b;
+    --c-top:#ef5a6c; --c-local:#4fb3ad; --c-state:#6fa3e3; --c-us:#9aa0ec; --c-world:#a8b86d;
+    --c-israel:#62a8f0; --c-tech:#c39be0; --c-talk:#e48a4f; --c-next:#a9b3bf;
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 var(--f-body);overflow-wrap:break-word}
+.wrap{max-width:720px;margin:0 auto;padding-left:16px;padding-right:16px}
+a{color:inherit;text-decoration:none}
+a:hover h3,a:focus-visible h3{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.mast{background:var(--brand);color:var(--brand-ink)}
+.mast .wrap{padding-top:18px;padding-bottom:16px}
+.mast .back{font:500 12px/1 var(--f-meta);letter-spacing:.06em;text-transform:uppercase;opacity:.85}
+.brand{margin:10px 0 0;font:700 28px/1.05 var(--f-head);letter-spacing:-.01em;text-transform:uppercase}
+.date{margin:6px 0 0;font:500 12px/1.3 var(--f-meta);letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.summary{margin:8px 0 0;font-size:16px;line-height:1.45}
+main .wrap{padding-top:20px;padding-bottom:40px}
+section{margin-bottom:30px}
+h2{margin:0 0 10px;font:700 15px/1 var(--f-head);letter-spacing:.09em;text-transform:uppercase;color:var(--c);display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:2px;background:var(--c);opacity:.35}
+h3{margin:0;font:700 19px/1.22 var(--f-head)}
+p{margin:4px 0 0}
+.meta{display:block;margin-top:6px;font:400 12px/1.3 var(--f-meta);color:var(--muted)}
+.item{display:block;padding:12px 0;border-top:1px solid var(--rule)}
+.item:first-of-type{border-top:0;padding-top:2px}
+.lead{display:block;background:var(--surface);border-top:4px solid var(--brand);padding:18px;border-radius:0 0 6px 6px;margin-bottom:12px}
+.lead h3{font-size:28px;line-height:1.12}
+.lead p{font-size:17px}
+.talk{background:var(--soft);border-radius:6px;padding:16px}
+.talk h3{font-size:17px}
+footer{font:400 12px/1.5 var(--f-meta);color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+</style>
+</head>
+<body>
+
+<header class="mast"><div class="wrap">
+  <a class="back" href="../../index.html">&larr; All briefings</a>
+  <h1 class="brand">Bothell Morning Briefing</h1>
+  <p class="date">[DATE] · 7:00 AM PT</p>
+  <p class="summary">[ONE-LINE SUMMARY]</p>
+</div></header>
+
+<main><div class="wrap">
+
+<!-- 1. TOP STORIES: one lead story (2-3 sentence summary) + 3 compact items -->
+<section style="--c:var(--c-top)">
+  <h2>Top stories</h2>
+  <a class="lead" href="[SOURCE URL]">
+    <h3>[HEADLINE]</h3>
+    <p>[SUMMARY]</p>
+    <span class="meta">[SOURCE] · [TIME]</span>
+  </a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 2. BOTHELL & EASTSIDE -->
+<section style="--c:var(--c-local)">
+  <h2>Bothell &amp; Eastside</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 3. WASHINGTON STATE -->
+<section style="--c:var(--c-state)">
+  <h2>Washington State</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 4. U.S. -->
+<section style="--c:var(--c-us)">
+  <h2>U.S.</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 5. WORLD -->
+<section style="--c:var(--c-world)">
+  <h2>World</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 6. ISRAEL -->
+<section style="--c:var(--c-israel)">
+  <h2>Israel</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 7. TECH -->
+<section style="--c:var(--c-tech)">
+  <h2>Tech</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 8. WHAT PEOPLE ARE TALKING ABOUT: lighter block, 1 sentence each, say why it's getting attention -->
+<section class="talk" style="--c:var(--c-talk)">
+  <h2>What people are talking about</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<!-- 9. COMING UP: decisions or events in the next few days -->
+<section style="--c:var(--c-next)">
+  <h2>Coming up</h2>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+  <a class="item" href="[SOURCE URL]"><h3>[HEADLINE]</h3><p>[SUMMARY]</p><span class="meta">[SOURCE] · [TIME]</span></a>
+</section>
+
+<footer>Bothell Morning Briefing · compiled for Mark · [DATE]. Tap any headline for the full story.</footer>
+</div></main>
+</body>
+</html>
