@@ -2,9 +2,11 @@
 
 Instructions for the daily agent. Use today's date in Pacific Time as `YYYY-MM-DD`.
 
+IMPORTANT: The homepage (`index.html`) IS the full latest briefing. Opening it must show the full news immediately, with no click to a day page. Day folders are the archive only.
+
 ## Step 1: Copy the template
 Copy `briefing/template.html` to `briefing/YYYY-MM-DD/index.html`.
-If that folder already exists, stop: never overwrite a past day.
+If that folder already exists for a previous calendar day, stop: never overwrite a past day. If it already exists for today (a same-day refresh), replace today's day page with the fresh version.
 
 ## Step 2: Fill in all placeholders
 Replace every placeholder in the new file. Keep the same sections, order and layout.
@@ -26,16 +28,11 @@ Rules:
 - You may remove extra item rows inside a section, but never remove or reorder sections.
 - When done, search the file: no `[` placeholder must remain.
 
-## Step 3: Update index.html
-1. Replace everything between `<!-- LATEST-START -->` and `<!-- LATEST-END -->` with:
-   ```html
-   <a class="latest" href="briefing/YYYY-MM-DD/"><span class="label">Latest briefing</span><span class="title">[DATE]</span></a>
-   ```
-2. Insert one new line directly after `<!-- DAY-LIST-START -->`, above the existing items:
-   ```html
-   <li><a href="briefing/YYYY-MM-DD/">[DATE]</a> - [ONE-LINE SUMMARY]</li>
-   ```
-Nothing else on the index changes.
+## Step 3: Update index.html (the homepage = full latest briefing)
+1. Copy today's day page to `index.html`.
+2. Remove its back link (`&larr; All briefings`), which would point to itself on the homepage.
+3. Replace its "Previous briefings" section with the correct past-days list, newest first, each as a link to `briefing/YYYY-MM-DD/` with that day's date and one-line summary. To build it: read the current homepage before overwriting it. If its date is a previous calendar day, add that day to the top of the Previous list, followed by its existing Previous list items. If its date is already today, keep its Previous list unchanged and do NOT add today to it. If there are no past days yet, keep the text "Previous briefings will appear here."
+Nothing else in the briefing content changes.
 
 ## Step 4: Do not
 - Edit or delete any past day folder.
